@@ -1,0 +1,32 @@
+.sidebar {
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    top: 57px;
+    width: 72px;
+z-index:200;
+padding-top:3px;
+cursor:pointer;
+}
+
+.sidebar-box {
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.sidebar-box:hover {
+    background-color: #eeeeee
+}
+
+.sidebar-box img {
+    height: 24px;
+   margin-bottom:6px;
+}
+.sidebar-box div{
+        font-size:10px;
+
+}
