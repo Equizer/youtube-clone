@@ -1,0 +1,145 @@
+.video-preview {
+    width: 100%;
+}
+
+.thumbnail {
+    position: relative;
+    width: 100%;
+}
+
+.thumbnail-row {
+    position: relative;
+}
+
+.timestamp {
+    position: absolute;
+    bottom: 10px;
+    right: 4px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 4px;
+    padding-left: 4px;
+    border-radius: 2px;
+    font-weight: 500;
+
+
+
+}
+
+.video-title {
+    margin-top: 0px;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.channel-name {
+    color: rgb(66, 66, 66);
+    font-size: 12px;
+    margin-top: 11px;
+    margin-bottom: 4px;
+}
+
+.video-stats {
+    color: rgb(66, 66, 66);
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+.pfp {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+}
+
+.video-info-grid {
+    margin-top: 7px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+
+.ALL-VIDEO-GRID {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media(max-width: 750px) {
+    .ALL-VIDEO-GRID {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width:751px) and (max-width:999px) {
+    .ALL-VIDEO-GRID {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(min-width:1000px) {
+    .ALL-VIDEO-GRID {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+.channel-tooltip-container {
+    position: relative;
+    height: 38px;
+    width: 38px;
+
+}
+
+.channel-tooltip {
+    display: flex;
+    justify-content: center;
+    /*I don't think above line of code (justify-content: center;)makes any changes in this elelment*/
+    align-items: center;
+    width: 200px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    bottom: -73px;
+    background-color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 9px;
+    padding-right: 9px;
+    border-radius: 8px;
+    pointer-events: none;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.15s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index:1;
+}
+
+.channel-tooltip-container:hover .channel-tooltip {
+    opacity: 1;
+}
+
+.channel-image-tooltip {
+    width: 48px;
+    border-radius: 40px;
+}
+
+.author-tooltip,
+.subscriber-tooltip {
+    margin-left: 10px;
+}
+
+.author-tooltip {
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.subscriber-tooltip {
+    font-size: 12px;
+    margin-top: 4px
+}
